@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <!-- La etiqueta table se usa para crear tablas en HTML -->
+    <table>
+        <!-- El elemento tr describe una fila de la tabla -->
+        <tr>
+            <!-- Cada elemento td corresponde a una celda dentro de la fila -->
+            <td>Cedula</td>
+            <td>{{user.cedula}}</td>
+        </tr>
+        <tr>
+            <td>Nombre</td>
+            <td>{{user.nombre}}</td>
+        </tr>
+        <tr>
+            <td>Apellido</td>
+            <td>{{user.apellido}}</td>
+        </tr>
+
+    </table>
+
+    <h2>Familiares</h2>
+
+    <table>
+        <!-- El elemento thead describe el area de encabezado en  la tabla -->
+        <thead style="font-weight: bold;">
+            <tr>
+                <td>Cedula</td>
+                <td>{{usuario.cedula}}</td>
+                
+
+            </tr>
+        </thead>
+
+        <!-- El elemento tbody describe el cuerpo de la tabla -->
+        <tbody>
+
+            {% for f in user.familiares %}
+
+            <tr>
+                <td>Nombre</td>
+                <td>{{usuario.nombre}}</td>
+
+            </tr>
+
+
+            <tr>
+                <td>Apellido</td>
+                <td>{{usuario.apellido}}</td>
+
+            </tr>
+
+            <tr>
+                <td>Correo</td>
+                <td>{{usuario.correo}}</td>
+
+            </tr>
+    </table>
+
+</body>
+
+</html>
